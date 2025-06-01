@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Copyright" content="Inazuma" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ranyeh" />
+    <meta name="rating" content="general" />
+    <meta name="language" content="English" />
+    <meta name="application-name" content="Inazuma" />
+    <meta
+      name="description"
+      content="Tailwind CSS Company Landing Page Template by Ranyeh."
+    />
+    <meta name="keywords" content="company" />
+    <meta
+      name="twitter:title"
+      content="Accessly"
+    />
+    <meta
+      name="twitter:description"
+      content="Accessly"
+    />
+    <meta name="twitter:image" content="./assets/img/inazuma-cover.png" />
+    <meta
+      content="Inazuma | Tailwind CSS Company Landing Page"
+      property="og:title"
+    />
+    <meta content="Inazuma" property="og:site_name" />
+    <meta
+      content="Accessly"
+      property="og:description"
+    />
+    <meta content="./assets/img/inazuma-cover.png" property="og:image" />
+    <meta content="https://ranyeh24.github.io/inazuma-tailwind" property="og:url" />
+    <meta content="website" property="og:type" />
+
+    <meta name="msapplication-TileColor" content="#3d63dd" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/mstile-144x144.png"
+    />
+    <meta name="theme-color" content="#3d63dd" />
+
+
+    <style>
+      .typing-cursor::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+
+
+
+
+
+  @keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+
+  .floating-shape {
+    position: absolute;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  /* Circle */
+  .shape1 {
+    top: 20%;
+    left: 10%;
+    width: 40px;
+    height: 40px;
+    background: rgb(243, 5, 203);
+    border-radius: 50%;
+    animation: floatUpDown 5s ease-in-out infinite;
+  }
+
+  /* Square */
+  .shape2 {
+    top: 35%;
+    left: 80%;
+    width: 35px;
+    height: 35px;
+    background: rgb(1, 7, 87);
+    animation: floatUpDown 6s ease-in-out infinite;
+  }
+
+  /* Triangle */
+  .shape3 {
+    top: 20%;
+    left: 70%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid rgb(251, 255, 0);
+    animation: floatUpDown 4s ease-in-out infinite;
+  }
+
+  /* Small Circle */
+  .shape4 {
+    top: 15%;
+    left: 60%;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    animation: floatUpDown 7s ease-in-out infinite;
+  }
+
+  /* Rotated Square */
+  .shape5 {
+    top: 55%;
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    background: rgb(187, 18, 18);
+    transform: rotate(45deg);
+    animation: floatUpDown 6.5s ease-in-out infinite;
+  }
+
+  /* Triangle (flipped) */
+  .shape6 {
+    top: 20%;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 32px solid rgb(21, 196, 143);
+    animation: floatUpDown 5.5s ease-in-out infinite;
+  }
+
+
+
+    </style>
+
+    <!-- Page title -->
+    <title>Accessly</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ranyeh24.github.io/inazuma-tailwind" />
+
+
+
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/Logo.png"
+    />
+
+
+    <link rel="manifest" href="./assets/favicon/site.webmanifest.json" />
+
+
+    <!-- CSS Plugins -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Page loading -->
+    <div
+      class="page-loading fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      aria-label="Loading..."
+    >
+      <div class="grid-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <header
+      class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent"
+      role="banner"
+      aria-label="Navigation bar"
+    >
+      <div class="container">
+        <div
+          class="ic-navbar-container relative -mx-5 flex items-center justify-between"
+        >
+          <div class="w-60 lg:w-56 max-w-full px-5">
+            <a
+              href="."
+              class="ic-navbar-logo block w-full py-5 text-primary-color"
+            >
+       
+
+
+
+
+            <figure class="">
+              <img
+                src="./assets/img/accessly-text.png"
+                alt="Hero image"
+                class="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
+              />
+            </figure>
+
+
+
+
+
+
+
+
+
+
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-5">
+            <div>
+              <button
+                type="button"
+                class="ic-navbar-toggler absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"
+                data-web-toggle="navbar-collapse"
+                data-web-target="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation menu"
+              >
+                <i class="lni lni-menu"></i>
+              </button>
+
+              <nav
+                id="navbarMenu"
+                class="ic-navbar-collapse absolute right-4 top-[80px] w-full max-w-[250px] rounded-lg hidden bg-primary-light-1 py-5 shadow-lg dark:bg-primary-dark-1 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6"
+              >
+                <ul
+                  class="block lg:flex"
+                  role="menu"
+                  aria-label="Navigation menu"
+                >
+                  <li class="group relative">
+                    <a
+                      href="#home"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active"
+                      role="menuitem"
+                      >Home</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#about"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >About</a
+                    >
+                  </li>
+
+
+                  <li class="group relative">
+                    <a
+                      href="#features"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Features</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#faq"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >FAQ</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#contact"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Contact</a
+                    >
+                  </li>
+
+
+                </ul>
+              </nav>
+            </div>
+            <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+
+
+                <!-- <div class="hidden sm:flex">
+                  <a
+                  href="https://codecanyon.net/user/aghilassaidj"
+                  class="inline-flex items-center justify-center gap-2 rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]"
+                  role="button"
+                >
+                  <i class="lni lni-cart text-lg/none"></i>
+                  <span>Buy Now</span>
+                </a>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main relative">
+      <!-- Hero section -->
+      <section
+        id="home"
+        class="relative overflow-hidden bg-primary text-primary-color pt-[120px] md:pt-[130px] lg:pt-[160px]"
+      >
+
+<!-- Floating Shapes -->
+<div class="floating-shape shape1"></div>
+<div class="floating-shape shape2"></div>
+<div class="floating-shape shape3"></div>
+<div class="floating-shape shape4"></div>
+<div class="floating-shape shape5"></div>
+<div class="floating-shape shape6"></div>
+
+
+
+        <div class="container">
+          <div class="-mx-5 flex flex-wrap items-center">
+            <div class="w-full px-5">
+             
+              <div class="scroll-revealed mx-auto max-w-[780px] text-center">
+
+
+                
+
+<h1 class="mb-6 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight text-white">
+  <span id="secure-text" style="color:#34d399;"></span>
+  Laravel-Ready User Management & 
+  <span id="rbac-text" style="color:#c084fc;"></span>
+  System
+</h1>
+
+<!--                 
+<h1 class="mb-6 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight">
+  <span style="color:#34d399;">Secure</span>
+  <span style="color: white;"> Laravel-Ready User Management & </span>
+  <span style="color: #c084fc;;">RBAC</span>
+  <span style="color: white;"> System</span>
+</h1> -->
+
+                <p
+                  class="mx-auto mb-9 max-w-[600px] text-base text-primary-color sm:text-lg sm:leading-normal"
+                >
+                Save hours of development by using a ready-to-implement user, role, and permission system—no need to build from scratch. 
+                </p>
+
+                <ul
+                  class="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5"
+                >
+                  <!-- <li>
+                    <a
+                    href="javascript:void(0)"
+                    class="inline-flex items-center justify-center gap-2 rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]"
+                    role="button"
+                  >
+                    <i class="lni lni-cart text-lg/none"></i>
+                    <span>Buy Now</span>
+                  </a>
+                  </li> -->
+
+                  <li>
+                    <a
+                      href="/login"
+                      class=" flex items-center gap-4 rounded-md bg-primary-color/[0.15] px-5 py-3 text-base font-medium text-primary-color hover:bg-primary-color hover:text-primary md:px-7 md:py-[14px]"
+                      role="button"
+                      ><i class="lni lni-enter text-lg/none"></i> Login</a>
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+            <div class="w-full px-5">
+              <div class="scroll-revealed relative z-10 mx-auto max-w-[845px]">
+
+
+
+
+                <figure class="mt-16" style="opacity: 90%;">
+                  <img
+                  src="./assets/img/hero.png"
+                  class="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
+                  alt="Hero image"
+                />
+                </figure>
+
+
+                
+
+                <div class="absolute -left-9 bottom-0 z-[-1]">
+                  <img
+                    src="./assets/img/dots.svg"
+                    alt
+                    class="w-[120px] opacity-75"
+                  />
+                </div>
+
+                <div class="absolute -right-6 -top-6 z-[-1]">
+                  <img
+                    src="./assets/img/dots.svg"
+                    alt
+                    class="w-[120px] opacity-75"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="section-area">
+        <div class="container">
+          <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
+            <div class="w-full">
+              <figure class="scroll-revealed max-w-[480px] mx-auto">
+                <img
+                  src="./assets/img/about-img.png"
+                  alt="About image"
+                  class="rounded-xl"
+                />
+              </figure>
+            </div>
+
+            <div class="w-full">
+              <div class="scroll-revealed">
+                <h6 class="mb-2 block text-lg font-semibold text-primary">
+                  About Accessly
+                </h6>
+                <h2 class="mb-6">
+                  A Complete User, Role & Permission Management System
+                </h2>
+              </div>
+
+              <div class="tabs scroll-revealed">
+                <div
+                  class="tabs-content mt-4"
+                  id="tabs-panel-profile"
+                  tabindex="-1"
+                  role="tabpanel"
+                  aria-labelledby="tabs-list-profile"
+                >
+                  <p>
+                    Accessly is a powerful and developer-friendly tool designed to simplify user access management in modern web applications. Built with Laravel and Vue.js, it provides everything you need to control who can do what—without writing complex permission logic from scratch.
+                  
+                  </p>
+                  <p>
+                    From handling users and assigning roles to managing permissions and tracking activity, Accessly helps you build secure, scalable systems in less time. Whether you're launching a new product or enhancing an existing app, Accessly fits seamlessly into your workflow.
+                  </p>
+                </div>
+
+                <div
+                  class="tabs-content mt-4"
+                  id="tabs-panel-vision"
+                  tabindex="-1"
+                  role="tabpanel"
+                  aria-labelledby="tabs-list-vision"
+                >
+                  <p>
+                    With a clean UI powered by Tailwind CSS and full customization options, Accessly is the perfect solution for developers who want to ship faster without compromising on control or security.
+
+                    Join the developers who trust Accessly to streamline their projects and deliver better, more secure user experiences.
+
+                  </p>
+              
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features section -->
+      <section id="features" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary">
+              Features
+            </h6>
+            <h2 class="mb-6">Features</h2>
+            <p>
+              Powerful Tools Built Into Accessly.
+              <p>Accessly gives you everything you need to manage users, roles, and permissions with clarity, flexibility, and speed.</p>
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-capsule"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    User Management
+                  </h4>
+                  <p>
+                    Easily create, edit, and organize users through a clean and intuitive interface.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+
+
+                <div
+                class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+              >
+                <i class="lni lni-layout"></i>
+              </div>
+
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Role & Permission Control
+                  </h4>
+                  <p>
+                    Define custom roles and assign permissions to maintain secure access across your application.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-gift"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Activity Tracking
+                  </h4>
+                  <p>
+                    Log and review user actions and permission changes for full visibility and accountability.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+
+
+
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-tailwindcss"></i>
+                </div>
+
+
+
+
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Built with Tailwind CSS
+                  </h4>
+                  <p>
+                    Enjoy a modern, responsive UI that’s easy to customize and integrates seamlessly with your design system.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-layers"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Fully Customizable
+                  </h4>
+                  <p>
+                    Adapt Accessly’s features and layout to fit your project’s exact needs—no rigid structures or limitations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Quick Integration
+                  </h4>
+                  <p>
+                    Drop Accessly into your Laravel or Vue.js app with minimal setup and start managing access in minutes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FAQ section -->
+      <section id="faq" class="section-area relative">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary">FAQ</h6>
+            <h2 class="mb-6">Any Questions? Look Here</h2>
+            <p>
+              Get quick answers to the most common questions about Accessly, our user, role, and permission management system.
+            </p>
+          </div>
+
+          <div class="grid gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
+            <div class="scroll-revealed flex">
+              <div
+                class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]"
+              >
+                <i class="lni lni-question-circle"></i>
+              </div>
+              <div class="w-full">
+                <h3
+                  class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl"
+                >
+                Can I customize roles and permissions to fit my app’s needs?
+                </h3>
+                <p class="text-body-light-11 dark:text-body-dark-11">
+                  Absolutely. Accessly is fully customizable. You can create as many roles and permissions as needed and tailor them to match your application's structure and logic.
+                </p>
+              </div>
+            </div>
+
+            <div class="scroll-revealed flex">
+              <div
+                class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]"
+              >
+                <i class="lni lni-question-circle"></i>
+              </div>
+              <div class="w-full">
+                <h3
+                  class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl"
+                >
+                Can I use Accessly in an existing project?
+                </h3>
+                <p class="text-body-light-11 dark:text-body-dark-11">
+                  Yes! You can plug Accessly into your current Laravel + Vue.js project. The structure is modular and won’t interfere with your existing setup.
+                </p>
+              </div>
+            </div>
+
+            <div class="scroll-revealed flex">
+              <div
+                class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]"
+              >
+                <i class="lni lni-question-circle"></i>
+              </div>
+              <div class="w-full">
+                <h3
+                  class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl"
+                >
+                Can I add unlimited roles and permissions?
+                </h3>
+                <p class="text-body-light-11 dark:text-body-dark-11">
+                  Yes, Accessly allows you to create and manage an unlimited number of roles and permissions. There are no restrictions—scale your access control as your application grows.
+                </p>
+              </div>
+            </div>
+
+            <div class="scroll-revealed flex">
+              <div
+                class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]"
+              >
+                <i class="lni lni-question-circle"></i>
+              </div>
+              <div class="w-full">
+                <h3
+                  class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl"
+                >
+                Is Accessly suitable for projects of any size?
+                </h3>
+                <p class="text-body-light-11 dark:text-body-dark-11">
+                  Yes! Accessly is built to support everything from small apps to enterprise-level systems. Its modular design, clean architecture, and flexibility make it ideal for both simple use cases and complex access control structures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="absolute left-5 top-5 -z-[1]">
+            <svg
+              class="w-20 h-auto fill-teal-500"
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1280.000000pt"
+              height="1280.000000pt"
+              viewBox="0 0 1280.000000 1280.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                stroke="none"
+              >
+                <path
+                  d="M550 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 12465 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z"
+                />
+                <path
+                  d="M3110 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M12070 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M550 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 11185 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z"
+                />
+                <path
+                  d="M3110 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M12070 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M550 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M4390 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M5670 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M4390 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M5670 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M4390 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M5670 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+              </g>
+            </svg>
+          </span>
+          <span class="absolute right-5 bottom-5 -z-[1]">
+            <svg
+              class="w-20 h-auto fill-indigo-500"
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1280.000000pt"
+              height="1280.000000pt"
+              viewBox="0 0 1280.000000 1280.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                stroke="none"
+              >
+                <path
+                  d="M550 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 12465 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z"
+                />
+                <path
+                  d="M3110 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M12070 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M550 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 11185 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z"
+                />
+                <path
+                  d="M3110 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M12070 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M550 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M4390 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M5670 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M4390 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M5670 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M4390 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z"
+                />
+                <path
+                  d="M5670 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M550 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M1830 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M3110 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M4390 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M5670 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M6950 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M8230 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M9510 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M10790 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+                <path
+                  d="M12070 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </section>
+
+
+
+
+      <!-- Contact Section -->
+<section id="contact" class="section-area bg-white dark:bg-gray-900 py-20 lg:py-24">
+  <div class="container">
+    <div class="text-center max-w-[550px] mx-auto mb-12">
+      <h6 class="mb-2 text-lg font-semibold text-primary">Contact</h6>
+      <h2 class="mb-4 text-3xl font-bold text-body-light-12 dark:text-body-dark-12">Get in Touch</h2>
+      <p class="text-body-light-11 dark:text-body-dark-11">
+        Whether you have questions, suggestions, or just want to say hello—we'd love to hear from you.
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-4 text-center">
+      <a href="mailto:support@efficsoft.com" class="text-primary hover:underline text-lg font-medium">
+        support@efficsoft.com
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+    </main>
+
+<!-- Footer -->
+<footer class="bg-primary-dark-2 text-white">
+  <div class="container max-w-7xl mx-auto px-4 py-16 lg:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Brand and Description -->
+      <div>
+        <a href="." class="inline-block mt-6 mb-6">
+          <img
+            src="./assets/img/accessly-text.png"
+            alt="accessly Logo"
+            class="w-20"
+          />
+        </a>
+        
+        <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-body-dark-11 text-sm lg:text-base mb-6">
+          <!-- <li>
+            <a href="#" class="text-white hover:text-primary transition-colors duration-200">Download</a>
+          </li> -->
+          <li>
+            <a href="/dashboard" class="text-white hover:text-primary transition-colors duration-200">Demo</a>
+          </li>
+          <li>
+            <a href="#contact" class="text-white hover:text-primary transition-colors duration-200">Contact</a>
+          </li>
+          <li>
+            <a href="/documentation" class="text-white hover:text-primary transition-colors duration-200">Documentation</a>
+          </li>
+        </ul>
+
+        
+
+    <!-- Divider -->
+    <div class="mt-12 border-t border-alpha-dark pt-6">
+      <div class="flex flex-col md:flex-row justify-between items-center text-sm text-body-dark-11">
+        <p>&copy; 2025 EfficSoft Inc. All rights reserved.</p>
+        <p>Crafted with ❤️ by your dev team.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <button
+      type="button"
+      class="inline-flex w-12 h-12 rounded-md items-center justify-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 fixed bottom-[117px] right-[20px] hover:-translate-y-1 opacity-100 visible z-50 is-hided"
+      data-web-trigger="scroll-top"
+      aria-label="Scroll to top"
+    >
+      <i class="lni lni-chevron-up"></i>
+    </button>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+      // Scroll Reveal
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "16px",
+        duration: 1000,
+        reset: false,
+      });
+
+      sr.reveal(`.scroll-revealed`, {
+        cleanup: true,
+      });
+
+      // GLightBox
+      GLightbox({
+        selector: ".video-popup",
+        href: "https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM",
+        type: "video",
+        source: "youtube",
+        width: 900,
+        autoplayVideos: true,
+      });
+
+      const myGallery3 = GLightbox({
+        selector: ".portfolio-box",
+        type: "image",
+        width: 900,
+      });
+
+      // Testimonial
+      const testimonialSwiper = new Swiper(".testimonial-carousel", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+
+<script>
+  const secureText = "Secure";
+  const rbacText = "RBAC";
+
+  const secureTarget = document.getElementById("secure-text");
+  const rbacTarget = document.getElementById("rbac-text");
+
+  let i = 0;
+  let j = 0;
+
+  function typeSecure() {
+    if (i < secureText.length) {
+      secureTarget.textContent += secureText.charAt(i);
+      i++;
+      setTimeout(typeSecure, 200);
+    } else {
+      secureTarget.classList.remove("typing-cursor");
+      rbacTarget.classList.add("typing-cursor");
+      setTimeout(typeRBAC, 300); // short delay before starting RBAC
+    }
+  }
+
+  function typeRBAC() {
+    if (j < rbacText.length) {
+      rbacTarget.textContent += rbacText.charAt(j);
+      j++;
+      setTimeout(typeRBAC, 100);
+    } else {
+      rbacTarget.classList.remove("typing-cursor");
+    }
+  }
+
+  // Start typing effect
+  secureTarget.classList.add("typing-cursor");
+  typeSecure();
+</script>
+
+
+
+  </body>
+</html>
